@@ -516,6 +516,9 @@ ul a.active{
 .projects-container{
     height: 100%;
     width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .first-project{
@@ -541,6 +544,18 @@ ul a.active{
 }
 
 @media(max-width:700px){
+
+
+    .projects{
+        height: auto;
+    }
+
+    .projects-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
     .first-project{
         width:90%;
         margin:auto;
